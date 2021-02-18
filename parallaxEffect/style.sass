@@ -1,0 +1,60 @@
+.wrapper
+    width: 100%
+    min-height: 100%
+    overflow: hidden
+
+.page
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+.parallax
+    position: relative
+    height: 100%
+    &_fog
+        background: url('./img/fog_1.png') bottom / cover no-repeat
+        position: fixed
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 2
+
+.parallax_montain
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    &_1
+        background: url('./img/m_1.png') 0 0 / cover no-repeat
+    &_2
+        z-index: 1
+        background: url('./img/m_2.png') bottom right / 45% no-repeat
+    &_3
+        z-index: 1
+        background: url('./img/m_3.png') left bottom / 100% no-repeat
+
+.content
+    position: relative
+    &_body
+        max-width: 1170px
+        margin: 0px auto
+    &_header
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 20px
+        padding: 0px 20px
+    &_title
+        font-size: 80px
+    &_subtitle
+        font-size: 40px
+    &_article
+        background-color: rgba(225,225,225,0.5)
+        padding: 25px
+        font-size: 17px
+        line-height: 24px
+    &_article p
+        margin-bottom: 20px
